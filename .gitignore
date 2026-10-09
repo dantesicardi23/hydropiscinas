@@ -1,0 +1,13 @@
+# Credenciales de conexión (no se versionan)
+config/config.php
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+.vscode/
+
+# Logs
+*.log
