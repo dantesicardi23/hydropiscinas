@@ -2,7 +2,7 @@
 
 - **Nombre del proyecto:** Plataforma Web Piscinas Polaco (Polaco ADM)
 - **Feature:** `001-catalogo-modelos`
-- **Versión del documento:** 0.3-draft
+- **Versión del documento:** 0.4-draft
 - **Estado:** BORRADOR (decisiones del relevamiento incorporadas; pendiente de validación con el cliente, ver §7.1)
 - **Fuente de origen:** presupuesto "Web Plan de Ahorro Piscinas" (emitido el 15-04-2026) y relevamiento posterior
 - **Artefacto asociado:** `design.md` — el CÓMO de esta feature (todavía no existe)
@@ -21,6 +21,7 @@
 | 0.1-draft | Inicio del proyecto | Contexto, glosario, entidades, RN-001..RN-008, F-CAT-001, F-CAT-002, hoja de ruta | Primer spec derivado del presupuesto |
 | 0.2-draft | Relevamiento (preguntas 1 a 7) | Se agregan `precioDesde` y `videoUrl` al Modelo; RN-004 pasa a orden aleatorio fijo por visita; se agregan RN-009, RN-010 y RN-011; nuevos CA de orden, precio y video; el CRUD se separa en la spec 002 | Respuestas del cliente a las preguntas abiertas de la v0.1 |
 | 0.3-draft | Cierre de decisiones para el diseño | La visita pasa a durar 30 minutos desde la última apertura del catálogo; RN-004 y RN-006 contemplan el orden recordado en el navegador y su caso borde; nuevo F-CAT-001/CA-12 (texto literal en el listado) | Decisiones tomadas al preparar `design.md` |
+| 0.4-draft | Detectado al preparar la base de datos | La entidad Imagen suma el campo `archivo` | La v0.3 definía la imagen sin referencia a su archivo, y sin eso no se puede mostrar |
 
 **Convención de IDs usada en este documento**
 
@@ -106,6 +107,7 @@ no cubre la carga de contenido del catálogo (spec 002).
 |---|---|---|
 | `id` | entero | Identificador único, asignado por el sistema. |
 | `modelo` | referencia a Modelo | Obligatorio. |
+| `archivo` | cadena | Obligatorio. Referencia al archivo de la imagen. Dónde se guarda y cómo se carga es la spec 002. |
 | `posicion` | entero | Lugar dentro de la galería. La primera es la imagen principal. |
 | `textoAlternativo` | cadena | Descripción de la imagen para accesibilidad. |
 

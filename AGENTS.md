@@ -67,7 +67,9 @@ la forma de las carpetas es una decisión nueva, no un ajuste.
 /
 ├── AGENTS.md
 ├── specs/
-│   ├── 001-catalogo-modelos/        requirements.md · design.md
+│   ├── 001-catalogo-modelos/
+│   │   ├── requirements.md · design.md
+│   │   └── prompts/                 tareas de implementación numeradas (no son fuente de verdad)
 │   └── 002-administracion-catalogo/ (se crea cuando le toque)
 ├── public/                          única carpeta expuesta por el servidor web
 │   ├── (pantallas del catálogo y de la ficha)
@@ -114,8 +116,10 @@ los textos) que **no podés resolver vos**.
 Si el código y la spec se contradicen, no lo dejes pasar en silencio: proponé el cambio como una
 nueva versión del documento afectado, con su motivo.
 
-Cada spec vive en `specs/NNN-nombre/` con su `requirements.md` y su `design.md`. Una spec puede
-tener su propio `AGENTS.md` con reglas que solo le aplican a ella; en ese caso, las suyas
+Cada spec vive en `specs/NNN-nombre/` con su `requirements.md` y su `design.md`. Puede incluir una
+carpeta `prompts/` con las tareas de implementación numeradas en orden de ejecución: son
+instrucciones de trabajo, no fuente de verdad, y ante un conflicto con la spec mandan
+`requirements.md` y `design.md`. Una spec puede tener su propio `AGENTS.md` con reglas que solo le aplican a ella; en ese caso, las suyas
 complementan las de este archivo y no las reemplazan.
 
 `requirements.md` y `design.md`, en la carpeta de cada spec, son la fuente de verdad. Este

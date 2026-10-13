@@ -3,7 +3,7 @@
 - **Feature:** `001-catalogo-modelos`
 - **Versión del documento:** 0.1-draft
 - **Estado:** BORRADOR (pendiente de aprobación)
-- **requirements.md de referencia:** [`requirements.md`](./requirements.md) (misma carpeta, v0.3-draft)
+- **requirements.md de referencia:** [`requirements.md`](./requirements.md) (misma carpeta, v0.4-draft)
 
 > **Este documento es el CÓMO.** Registra decisiones de diseño y su porqué.
 > **No contiene código de implementación**, ni nombres exactos de funciones, ni la definición
